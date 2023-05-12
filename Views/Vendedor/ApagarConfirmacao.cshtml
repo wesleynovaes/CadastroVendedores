@@ -1,0 +1,11 @@
+﻿@model VendedorModel
+@{
+    ViewData["Title"] = "Confirmação de apagar vendedor";
+}
+
+<div class="text-center">
+    <h3>Realmente deseja excluir o vendedor (@Model.Nome)?</h3>
+</div><br />
+
+<a class="btn btn-primary btn-block" asp-controller="Vendedor" asp-action="index" role="button">Cancelar exclusão</a>
+<a class="btn btn-danger btn-block"  asp-controller="Vendedor" asp-action="apagar" role="button">Confirmar exclusão</a>
